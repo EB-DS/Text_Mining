@@ -25,19 +25,27 @@ Each folder includes a **Jupyter notebook (`.ipynb`)**, an **executed HTML repor
 2. **Model:** Apply TF-IDF with logistic regression; evaluate held-out predictions using precision, recall, F1, and confusion matrices. Explore themes with K-means clustering.
 3. **Decide:** Connect observed findings to an organizational recommendation, acknowledge uncertainty and misclassification risks, and propose safeguards and human oversight.
 
-## Selected results from the executed notebooks
+## Selected visualizations
 
-These are **illustrative outputs from the included classroom analyses**, not evidence of production readiness. Results depend on the dataset, sampling, and experimental setup in each notebook.
+The figures below are **actual outputs from the executed project notebooks**. They illustrate model evaluation and exploratory clustering, not production readiness. Results depend on the data and experimental settings documented in each project.
 
-| Spam detection: classification errors | Emotion recognition: label distribution |
+| Group 1 · Spam detection | Group 2 · News classification |
 |---|---|
-| ![Held-out SMS spam confusion matrix](assets/images/spam_confusion_matrix.png) | ![Distribution of emotion labels](assets/images/emotion_label_distribution.png) |
+| ![SMS spam confusion matrix](assets/images/spam_confusion_matrix.png) | ![News classification confusion matrix](assets/images/news_confusion_matrix.png) |
+| **Reading:** Inspect false positives and false negatives before recommending automated filtering. | **Reading:** Compare correct predictions and confusion between news categories. |
 
-**Banking chatbot: exploratory K-means clusters**
+| Group 4 · Emotion recognition | Group 5 · Financial news sentiment |
+|---|---|
+| ![Emotion classification confusion matrix](assets/images/emotion_confusion_matrix.png) | ![Financial sentiment cluster composition](assets/images/financial_cluster_composition.png) |
+| **Reading:** Compare errors across emotions rather than relying on overall accuracy alone. | **Reading:** Cluster membership and known sentiment labels do not necessarily align. |
 
-![Two-dimensional TF-IDF projection and cluster composition for banking intents](assets/images/banking_cluster_visualization.png)
+**Group 6 · Banking chatbot intent clustering**
 
-The confusion matrix helps distinguish different types of classification error; the emotion distribution highlights class balance; and the banking visualization illustrates why exploratory clusters should not automatically be treated as known intent labels.
+![Two-dimensional TF-IDF projection of banking intent clusters](assets/images/banking_cluster_visualization.png)
+
+**Reading:** A two-dimensional projection is a simplified view of high-dimensional text features. Visual separation does not establish that clusters correspond to known customer intents.
+
+The [Group 3 online discussions project](Group03_Online_Discussions/) also includes classification and clustering results in its notebook and executed HTML report. Additional Group 2, 4, and 5 visualizations are available in their respective reports.
 
 ## Getting started
 
